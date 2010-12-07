@@ -13,10 +13,7 @@ BuildRequires:  gtk2-devel >= 2.0.0
 BuildRequires:  xapian-core-devel >= 1.2.3 
 BuildRequires:  gmime-devel >= 2.5.1
 BuildRequires:  libuuid-devel >= 2.18
-Requires:  	xapian-core >= 1.2.3
-Requires:  	gtk2 >= 1.2.3
-Requires:	gmime >= 2.5.1
-Requires:	libuuid >= 2.18
+
 %description
 mu is a set of tools for dealing with Maildirs and the e-mail messages in them.
 
@@ -24,8 +21,8 @@ mu is a set of tools for dealing with Maildirs and the e-mail messages in them.
 %setup -q
 
 %build
-sed -i -r 's/(hardcode_into_libs)=.*$/\1=no/' configure
-sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' configure
+#sed -i -r 's/(hardcode_into_libs)=.*$/\1=no/' configure
+#sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' configure
 
 %configure
 make %{?_smp_mflags}
