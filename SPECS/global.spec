@@ -54,7 +54,7 @@ fi
 %{_localstatedir}/gtags/*
 
 %changelog
-* Sat Dec  4 2010 R. Andrew Bailey <gemi@bluewin.ch> - 5.9.2-1
+* Sat Dec  4 2010 R. Andrew Bailey <bailey@akamai.com> - 5.9.2-1
 - new release 5.9.2
 
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.7.5-2
